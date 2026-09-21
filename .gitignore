@@ -1,6 +1,7 @@
 # =============================================================================
 # Generic Editor, OS, and Secret Files
 # =============================================================================
+
 # OS-generated files
 .DS_Store
 Thumbs.db
@@ -17,23 +18,30 @@ Thumbs.db
 .classpath
 .settings/
 
+# =============================================================================
 # Sensitive environment variables and credentials
+# =============================================================================
+
 # IMPORTANT: Never commit secret keys!
 .env
 .env.*
 .flaskenv
 
+# Google Cloud / Firebase credentials
+my-credentials.json
+
 # =============================================================================
 # Python / Backend Specific
 # =============================================================================
-# Virtual environments (common locations relative to project root)
+
+# Virtual environments
 /backend/venv/
 /backend/.venv/
 /backend/env/
 /backend/.Python/
-venv/                  # Covers cases where venv might be at project root
-.venv/                 # Covers cases where .venv might be at project root
-env/                   # Covers cases where env might be at project root
+venv/
+.venv/
+env/
 
 # Bytecode and compiled files
 /backend/__pycache__/
@@ -41,16 +49,13 @@ env/                   # Covers cases where env might be at project root
 /backend/*.pyo
 /backend/*.pyd
 
-
-
-
-
 # =============================================================================
 # Node / Frontend Specific
 # =============================================================================
+
 # Dependencies
 /frontend/node_modules/
-node_modules/ # Covers cases where node_modules might be at project root
+node_modules/
 /frontend/env
-
-
+/backend/venv311/
+/backend/venv_linux/
